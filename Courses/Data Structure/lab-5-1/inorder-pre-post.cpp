@@ -38,9 +38,7 @@ string reverse_array(string str){
 }
 
 bool is_Operator(char ch){
-    if( ch == '+' || ch == '-' || ch == '*' || ch == '/')
-        return true;
-    return true;
+    return ( ch == '+' || ch == '-' || ch == '*' || ch == '/');
 }
 
 int precendence(char ch){
