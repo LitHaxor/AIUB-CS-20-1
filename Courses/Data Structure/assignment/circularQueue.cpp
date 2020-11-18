@@ -40,24 +40,7 @@ int main()
 
 void Queue :: Enqueue(int element)
 {
-  if (((front == 0) && (rear == -1)) || (rear == (front-1) % (maxSize-1))){
-    cout << "Max size reached!" <<endl;
-    return;
-  }
-  else if(front == -1){
-    front = 0; rear = 0;
-    que[rear] = element;
-    cout << element << " Enqueued!";
-  }
-  else if ((rear == maxSize -1) && (front != 0)){
-    rear = 0;
-    que[rear] = element;
-    cout << element << " Enqueued!";
-  }
-  else  {
-    que[++rear] =element;
-    cout << element << " Enqueued!";
-  }
+
 
 }
 void Queue :: Dequeue()
