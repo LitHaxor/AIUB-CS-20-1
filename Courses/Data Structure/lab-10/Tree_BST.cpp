@@ -231,11 +231,11 @@ Node* BST ::  bst_delete(Node *node, int key)
         /   \   /  \
       40    n  n   n
   1. deleting 40:
-                10
-              /   \
-            20     50
-          /   \   /  \
-         n    n  n    n
+              10
+            /   \
+          20     50
+        /   \   /  \
+       n    n  n    n
     */
     else if( node -> left == NULL && node -> right != NULL)
     // 2.1 node has one child on the right
