@@ -1,0 +1,63 @@
+# LAB Performance 1
+# Submitted by HASAN AHAMED
+# ID- 20-41987-1
+
+## 1. Display all data from emp table:
+	SELECT * FROM EMP;
+
+
+## 2.Display all data from dept table:
+
+	SELECT * FROM DEPT;
+
+
+## 3. Display all data from salgrade table:
+
+	SELECT * FROM SALGRADE;
+
+
+## 4.Display only the column ename from emp table.
+
+	SELECT ename FROM emp;
+
+
+## 5.Display the column losal from salgrade table.
+
+	SELECT losal FROM salgrade;
+	
+
+## 6. Write a query to display the name and salary of all employees:
+
+	SELECT ename,sal FROM emp;
+
+
+## 7. Create a query to display the employee name and department number for all employees;
+
+	SELECT ename,deptno FROM emp;
+
+
+## 8. Display the columns sal, comm, (sal+1200)-(sal*34) from emp table.
+
+	SELECT sal,comm,(sal+1200)-(sal*34) FROM emp;
+
+
+## 9. Use Employee Name as an alias for ename column and display all the data of that
+column.
+
+	SELECT ename AS "Employee Name" FROM emp;
+
+
+## 10.Display the department number from emp table and make sure only unique values are
+shown.
+
+	SELECT DISTINCT deptno FROM emp;
+
+
+## 11. Concatenate the columns dname and loc from dept table.
+
+	SELECT dname||loc FROM dept;
+
+
+## 12. Concatenate the columns ename and sal from emp table and add the literal gets paid between the two columns. 
+            
+	SELECT ename, ename||sal AS "Gets Paid" , sal FROM emp;                                                           

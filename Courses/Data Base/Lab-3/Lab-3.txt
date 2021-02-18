@@ -1,0 +1,61 @@
+/* 1 */
+CREATE TABLE Teacher (
+       T_id number(10),
+       T_name varchar2(20),
+       Phone number,
+       Salary number(7),
+       Email varchar2(30),
+       Blood_group varchar2(3),
+       Published_paper number(2),
+       Designation varchar2(15)
+);
+
+/*2*/
+ALTER TABLE Teacher ADD(
+      Department varchar2(5),
+      Gender  varchar2(6) 
+);
+
+
+/*3*/
+ALTER TABLE Teacher RENAME COLUMN Department TO Dept;
+
+/*4*/
+ALTER TABLE Teacher modify(
+      salary number(7,3)
+);
+
+/*5*/
+ALTER TABLE Teacher DROP COLUMN email;
+
+/*6*/
+RENAME Teacher TO Teachers;
+
+
+/*7*/
+INSERT INTO teachers VALUES (1, 'Harry', 123, 455.86 , 'B+', 2, 'Lecturer', 'CSE', 'Male');
+
+INSERT INTO teachers VALUES (2, 'Ron', 456, 245.78, 'O+', 1, 'Lecturer', 'BBA', 'Male');
+
+INSERT INTO teachers VALUES (3, 'Hermione', 789, 789.56, 'A+', 8, 'Professor', 'CSE', 'Female');
+
+INSERT INTO teachers VALUES (4, 'Malfoy', 101, 254.93 , 'O-', 3, 'Instructor', 'LAW', 'Male');
+
+INSERT INTO teachers VALUES (5,'Bill' , 102, 999.78, 'B-' , 7, 'Professor', 'EEE' , 'Male');
+
+INSERT INTO teachers VALUES (6, 'Ginny', 103, 567.85, 'A-', 2, 'Lecturer', 'CSE', 'Female');
+
+INSERT INTO teachers VALUES (7, 'Hargid', 104, 242.89, 'AB+', 0, 'Instructor', 'ENG', 'Male');
+
+INSERT INTO teachers VALUES (8, 'Cedric', 105, 567.88, 'B+', 7, 'Lecturer', 'CSE', 'Male');
+
+INSERT INTO teachers VALUES (9, 'Krum', 106, 667.34, 'AB-', 4, 'Instructor', 'LAW', 'Male');
+
+INSERT INTO teachers VALUES (10, 'Neville', 107, 787.89, 'O+', 6, 'Lecturer', 'BBA', 'Male');
+
+
+/*8*/
+DELETE FROM teachers WHERE published_paper<2;
+
+/*9*/
+UPDATE teachers SET designation='Professor';

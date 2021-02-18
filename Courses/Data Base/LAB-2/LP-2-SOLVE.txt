@@ -1,0 +1,21 @@
+1. SELECT ENAME, SAL FROM EMP WHERE SAL> 2850;
+
+2. SELECT ENAME, DEPTNO FROM EMP WHERE EMPNO='7566';
+
+3. SELECT ename, job, hiredate FROM EMP WHERE HIREDATE BETWEEN '20-FEB-1981' AND '1-MAY-1981';
+
+4. SELECT ename, deptno FROM emp WHERE deptno='30' OR deptno='10' ORDER BY ename;
+//or SELECT ename, deptno FROM emp WHERE deptno IN('10','30') ORDER BY ename;
+
+5. SELECT ename, hiredate FROM EMP WHERE HIREDATE BETWEEN '1-JAN-1982' AND '31-DEC-1982';
+
+6. SELECT ename, job FROM EMP WHERE MGR IS NULL;
+
+7. SELECT ename, sal, comm FROM emp WHERE comm is not null ORDER BY SAL DESC;
+
+8. SELECT * FROM EMP WHERE ename LIKE '__A%';
+
+9. SELECT * FROM EMP WHERE ename LIKE '%LL%';
+
+10. SELECT losal, hisal FROM salgrade WHERE losal IN('1201');
+// or SELECT losal, hisal FROM salgrade WHERE losal='1201';
